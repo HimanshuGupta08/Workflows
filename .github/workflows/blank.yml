@@ -24,8 +24,8 @@ env:
   file: python.py
   file1: document.py
 
-  num1: ${{github.event.inputs.input-num-1}}
-  num2: ${{github.event.inputs.input-num-2}}
+  input-num-1: ${{github.event.inputs.input-num-1}}
+  input-num-2: ${{github.event.inputs.input-num-2}}
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
