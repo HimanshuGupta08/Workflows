@@ -46,5 +46,3 @@ jobs:
       - name: Run a second-line script
         run: |
           python 2.py
-          
->>>>>>> 5133ed0 (First commit)
