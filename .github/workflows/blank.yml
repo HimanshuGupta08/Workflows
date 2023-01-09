@@ -11,6 +11,22 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      input-num-1: 
+        description: "First input"
+        required: true
+
+      input-num-2: 
+          description: "Second input"
+          required: true
+
+env:
+  file: python.py
+  file1: document.py
+
+  num1: ${{github.event.inputs.input-num-1}}
+  num2: ${{github.event.inputs.input-num-2}}
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
